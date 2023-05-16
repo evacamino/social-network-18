@@ -14,3 +14,5 @@ router
   .get(getSingleUser)
   .put(updateUser)
   .delete(deleteUser);
+
+  module.exports = router

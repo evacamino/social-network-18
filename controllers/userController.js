@@ -38,6 +38,7 @@ module.exports = {
                 { $set: req.body },
                 { runValidators: true, new: true}
             )
+            res.json(user);
         } catch (err) {
             res.status(500).json(err);
         }
