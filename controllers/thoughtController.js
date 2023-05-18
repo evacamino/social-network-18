@@ -11,7 +11,7 @@ module.exports = {
   },
   async getSingleThought(req, res) {
     try {
-      const thoughts = await thoughts.findOne({ _id: req.params.userId });
+      const thoughts = await Thought.findOne({ _id: req.params.thoughtId });
       if (!thoughts) {
         return res
           .status(404)
